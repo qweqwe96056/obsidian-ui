@@ -8037,7 +8037,7 @@ local PlayerInfoFrame = New("Frame", {
 
     local LockButton = Library:AddDraggableButton("锁定", function(self)
             Library.CantDragForced = not Library.CantDragForced
-            self:SetText(Library.CantDragForced and "取消锁定" or "锁定")
+            self:SetText(Library.CantDragForced and "取消-锁定" or "锁定")
         end)
 
         if WindowInfo.MobileButtonsSide == "Right" then
