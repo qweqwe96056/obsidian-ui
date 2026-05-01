@@ -8031,13 +8031,13 @@ local PlayerInfoFrame = New("Frame", {
     end
 
     if Library.IsMobile then
-        local ToggleButton = Library:AddDraggableButton("Toggle", function()
+        local ToggleButton = Library:AddDraggableButton("开/关", function()
             Library:Toggle()
         end)
 
-    local LockButton = Library:AddDraggableButton("Lock", function(self)
+    local LockButton = Library:AddDraggableButton("锁定", function(self)
             Library.CantDragForced = not Library.CantDragForced
-            self:SetText(Library.CantDragForced and "Unlock" or "Lock")
+            self:SetText(Library.CantDragForced and "取消锁定" or "锁定")
         end)
 
         if WindowInfo.MobileButtonsSide == "Right" then
