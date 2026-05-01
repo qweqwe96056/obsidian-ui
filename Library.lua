@@ -8031,7 +8031,7 @@ local PlayerInfoFrame = New("Frame", {
     end
 
     if Library.IsMobile then
-        local ToggleButton = Library:AddDraggableButton("ㅤ开/关ㅤ", function()
+        local ToggleButton = Library:AddDraggableButton("  开关  ", function()
             Library:Toggle()
         end)
 
